@@ -1,0 +1,19 @@
+
+/_dist_/
+/_build_/
+/PanoramicImageSee/Assets/TextMesh Pro/
+/PanoramicImageSee/Assets/TextMesh Pro.meta
+/PanoramicImageSee/Assets/Plugins/
+/PanoramicImageSee/Assets/Plugins.meta
+/PanoramicImageSee/Assets/3rd/
+/PanoramicImageSee/Assets/3rd.meta
+/PanoramicImageSee/Library/
+/PanoramicImageSee/obj/
+/PanoramicImageSee/Logs/
+/PanoramicImageSee/Temp/
+/PanoramicImageSee/UserSettings/
+/PanoramicImageSee/*.sln
+/PanoramicImageSee/*.csproj
+/PanoramicImageSee/.vsconfig
+/PanoramicImageSee/.vs/
+/.UNITY_HOME.env
