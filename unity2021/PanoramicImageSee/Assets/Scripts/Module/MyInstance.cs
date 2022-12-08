@@ -336,7 +336,10 @@ namespace XTC.FMP.MOD.PanoramicImageSee.LIB.Unity
         private void buildTeleporterZoomEffect()
         {
             var rtRoot = rootUI.GetComponent<RectTransform>();
-            uiReference_.container.gameObject.AddComponent<SoftMask>();
+            var componentSoftMask = uiReference_.container.gameObject.AddComponent<SoftMask>();
+            var refSoftMask = rootAttachments.transform.Find("SoftMask").GetComponent<SoftMask>();
+            componentSoftMask.defaultUIShader = refSoftMask.defaultUIShader;
+            componentSoftMask.defaultUIETC1Shader = refSoftMask.defaultUIETC1Shader;
             uiReference_.container.GetComponent<Image>().enabled = true;
             var rtRenderer = uiReference_.renderer.rectTransform;
             rtRenderer.anchorMin = new Vector2(0.5f, 0.5f);
