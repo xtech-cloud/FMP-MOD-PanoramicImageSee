@@ -337,9 +337,8 @@ namespace XTC.FMP.MOD.PanoramicImageSee.LIB.Unity
         {
             var rtRoot = rootUI.GetComponent<RectTransform>();
             var componentSoftMask = uiReference_.container.gameObject.AddComponent<SoftMask>();
-            var refSoftMask = rootAttachments.transform.Find("SoftMask").GetComponent<SoftMask>();
-            componentSoftMask.defaultUIShader = refSoftMask.defaultUIShader;
-            componentSoftMask.defaultUIETC1Shader = refSoftMask.defaultUIETC1Shader;
+            componentSoftMask.defaultUIShader = rootAttachments.transform.Find("SoftMask_UI_Default").GetComponent<MeshRenderer>().material.shader;
+            componentSoftMask.defaultUIETC1Shader = rootAttachments.transform.Find("SoftMask_UI_Default_ETC1").GetComponent<MeshRenderer>().material.shader;
             uiReference_.container.GetComponent<Image>().enabled = true;
             var rtRenderer = uiReference_.renderer.rectTransform;
             rtRenderer.anchorMin = new Vector2(0.5f, 0.5f);

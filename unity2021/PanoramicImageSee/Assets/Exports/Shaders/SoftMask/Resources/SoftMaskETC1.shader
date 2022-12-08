@@ -1,4 +1,4 @@
-﻿Shader "Hidden/UI Default ETC1 (Soft Masked)"
+﻿Shader "XTC_PanoramicImageSee/UI Default ETC1 (Soft Masked)"
 {
     // ETC1-version (with alpha split texture) of SoftMask.shader.
     // In Unity 5.3 this shader is the same as SoftMask.shader and it's never used.
