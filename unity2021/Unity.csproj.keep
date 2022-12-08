@@ -84,6 +84,9 @@
     <Reference Include="EasyTouchPlugin">
       <HintPath>{{WORK_DIR}}\PanoramicImageSee\Assets\3rd\EasyTouch-5.0.17\EasyTouchPlugin.dll</HintPath>
     </Reference>
+    <Reference Include="SoftMaskPlugin">
+      <HintPath>{{WORK_DIR}}\PanoramicImageSee\Assets\3rd\SoftMask-1.6.0\SoftMaskPlugin.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
